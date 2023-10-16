@@ -1,0 +1,9 @@
+alias c="clear"
+alias ear="clear"
+alias changed="git diff -w HEAD --staged -- . ':!yarn.lock' ':!*package-lock.json'"
+alias reload="source ~/.zshrc && clear"
+alias gen="node -p '[...Array(30)].map(() => Math.random().toString(36)[3]).join(\"\");'"
+alias commit="npx git-cz"
+alias branch_create='git checkout -b $1'
+alias branch_delete='git branch -d $1'
+alias load_env='env $(cat .env | xargs) $1'
